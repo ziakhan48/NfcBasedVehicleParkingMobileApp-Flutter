@@ -35,15 +35,12 @@ class SlotReservationController {
   }
 
   String No_Validator(String text) {
-   
-
     print("SlotReservation: Vehicle No Validation Passed");
     this.Model.no = text;
     return "";
   }
 
   String Id_Validator(String text) {
-   
     this.Model.id = text;
     return "";
   }
@@ -64,6 +61,44 @@ class SlotReservationController {
 
     print("SlotReservation: type Validation Passed");
     this.Model.type = text;
+    return "";
+  }
+
+  String Email_Validator(String text) {
+    Pattern pattern =
+        r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
+    RegExp regex = new RegExp(pattern);
+
+    if (text.length < 5) {
+      return "Email is Invalid";
+    } else if (!regex.hasMatch(text)) {
+      return "Email is Invalid";
+    }
+
+    print("SignUp: Email Validation Passed");
+    this.Model.email = text;
+    return "";
+  }
+
+  String City_Validator(String text) {
+    if (text.length < 3) {
+      return "Invalid City Name";
+    }
+
+    print("SlotReservation: City Validation Passed");
+    this.Model.city = text;
+    return "";
+  }
+
+  String ZipCode_Validation(String text) {
+    print("SlotReservation: Vehicle No Validation Passed");
+    this.Model.zipCode = text;
+    return "";
+  }
+
+  String NoOfHours_Validator(String text) {
+    print("SlotReservation: Vehicle No Validation Passed");
+    this.Model.noOfhours = text;
     return "";
   }
 }

@@ -3,11 +3,11 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:parkit_com/screens/Authentication/login.dart';
 import 'package:parkit_com/screens/ParkingcardExample/parkingcardE.dart';
-import 'package:parkit_com/screens/UserReservationHistory.dart';
+import 'package:parkit_com/screens/StripePayment/Payment_home.dart';
+import 'package:parkit_com/screens/confirmPayment_screen.dart';
 import 'package:parkit_com/screens/mainscreen.dart';
+import 'package:parkit_com/screens/payment_screen.dart';
 import 'package:parkit_com/services/Token/Token_Handling.dart';
-
-import '../main.dart';
 
 class BottomNavBar extends StatefulWidget {
   int index = 0;
@@ -20,12 +20,11 @@ class BottomNavBar extends StatefulWidget {
 
 class _BottomNavBarState extends State<BottomNavBar> {
   int navigationvalues = 0;
-  String result2 = null;
+  String result2;
 
   _BottomNavBarState(int index) {
     navigationvalues = index;
   }
-  int _page = 0;
   GlobalKey _bottomNavigationKey = GlobalKey();
 
   @override
@@ -76,14 +75,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
             print("2");
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => MyApp()),
+              MaterialPageRoute(builder: (_) => PaymentScreen()),
             );
           } else if (index == 2) {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => SplashScreen()),
+              MaterialPageRoute(builder: (_) => ConfirmPayment()),
             );
-            print("2");
           } else if (index == 3) {
             print("index 3");
           } else if (index == 4) {
@@ -103,9 +101,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             //       );
           }
 
-          setState(() {
-            _page = index;
-          });
+          setState(() {});
         });
   }
 

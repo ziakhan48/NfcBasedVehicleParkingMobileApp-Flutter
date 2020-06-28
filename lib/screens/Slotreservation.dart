@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:parkit_com/Controller/SlotReservation_Controller.dart';
-import 'package:parkit_com/screens/slotlistscreen.dart';
+import 'package:parkit_com/screens/payment_screen.dart';
 import 'package:parkit_com/services/Authentication/SlotReservation_service.dart';
 import 'package:parkit_com/widgets/Constant_Widget.dart/AppBar.dart';
 import 'package:parkit_com/widgets/bottonnavigation.dart';
@@ -36,12 +36,10 @@ class _SlotReservationState extends State<SlotReservation> {
     String message = _controller.Id_Validator(slot_id.toString());
     return new Scaffold(
       appBar: AppBar(
-        backgroundColor:Colors.white,
-         iconTheme: IconThemeData( color: Hexcolor('#ffae19')),
+        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(color: Hexcolor('#ffae19')),
         title: Appbar(),
-        actions: <Widget>[
-          
-        ],
+        actions: <Widget>[],
       ),
       body: ListView(children: <Widget>[
         Container(
@@ -54,7 +52,7 @@ class _SlotReservationState extends State<SlotReservation> {
                 Container(
                   padding: EdgeInsets.fromLTRB(20, 7, 0, 10),
                   child: Image.asset(
-                    'lib/assets/images/slotcar.png',
+                    'lib/assets/images/res.jpg',
                     width: 90,
                     height: 70,
                   ),
@@ -77,11 +75,11 @@ class _SlotReservationState extends State<SlotReservation> {
           child: Column(
             children: <Widget>[
               Padding(
-                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 2.0),
+                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 7.0),
                   child: new Row(
                     mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
-                      new Flexible(
+                      Flexible(
                         child: new TextField(
                           onChanged: (text) {
                             bool validate_;
@@ -98,17 +96,24 @@ class _SlotReservationState extends State<SlotReservation> {
                             });
                           },
                           decoration: InputDecoration(
-                              suffixIcon: validate == true
-                                  ? Icon(Icons.error,
-                                      color: Colors.amber, size: 0)
-                                  : Icon(Icons.error, color: Colors.amber),
-                              hintText: "Enter your Name eg. Ali khan"),
+                            suffixIcon: validate == true
+                                ? Icon(Icons.error,
+                                    color: Colors.amber, size: 0)
+                                : Icon(Icons.error, color: Colors.amber),
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.red, //this has no effect
+                              ),
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            hintText: "enter fullname",
+                          ),
                         ),
                       ),
                     ],
                   )),
               Padding(
-                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 2.0),
+                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 7.0),
                   child: new Row(
                     mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
@@ -132,14 +137,165 @@ class _SlotReservationState extends State<SlotReservation> {
                                   ? Icon(Icons.error,
                                       color: Colors.amber, size: 0)
                                   : Icon(Icons.error, color: Colors.amber),
-                              hintText:
-                                  "Enter Mobile Number eg. +92345*******"),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.red, //this has no effect
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              hintText: "enter mobile no"),
                         ),
                       ),
                     ],
                   )),
               Padding(
-                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 2.0),
+                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 7.0),
+                  child: new Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      new Flexible(
+                        child: new TextField(
+                          onChanged: (text) {
+                            bool validate_;
+                            String message = _controller.Email_Validator(text);
+                            if (message == "") {
+                              validate_ = true;
+                            } else {
+                              validate_ = false;
+                            }
+
+                            setState(() {
+                              validate = validate_;
+                            });
+                          },
+                          decoration: InputDecoration(
+                              suffixIcon: validate == true
+                                  ? Icon(Icons.error,
+                                      color: Colors.amber, size: 0)
+                                  : Icon(Icons.error, color: Colors.amber),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.red, //this has no effect
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              hintText: "enter email address"),
+                        ),
+                      ),
+                    ],
+                  )),
+              Padding(
+                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 7.0),
+                  child: new Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      new Flexible(
+                        child: new TextField(
+                          onChanged: (text) {
+                            bool validate_;
+                            String message = _controller.City_Validator(text);
+                            if (message == "") {
+                              validate_ = true;
+                            } else {
+                              validate_ = false;
+                            }
+
+                            setState(() {
+                              validate = validate_;
+                            });
+                          },
+                          decoration: InputDecoration(
+                              suffixIcon: validate == true
+                                  ? Icon(Icons.error,
+                                      color: Colors.amber, size: 0)
+                                  : Icon(Icons.error, color: Colors.amber),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.red, //this has no effect
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              hintText: "enter city"),
+                        ),
+                      ),
+                    ],
+                  )),
+              Padding(
+                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 4.0),
+                  child: new Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      new Flexible(
+                        child: new TextField(
+                          onChanged: (text) {
+                            bool validate_;
+                            String message =
+                                _controller.ZipCode_Validation(text);
+                            if (message == "") {
+                              validate_ = true;
+                            } else {
+                              validate_ = false;
+                            }
+
+                            setState(() {
+                              validate = validate_;
+                            });
+                          },
+                          decoration: InputDecoration(
+                              suffixIcon: validate == true
+                                  ? Icon(Icons.error,
+                                      color: Colors.amber, size: 0)
+                                  : Icon(Icons.error, color: Colors.amber),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.red, //this has no effect
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              hintText: "enter zip code"),
+                        ),
+                      ),
+                    ],
+                  )),
+              Padding(
+                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 7.0),
+                  child: new Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      new Flexible(
+                        child: new TextField(
+                          onChanged: (text) {
+                            bool validate_;
+                            String message =
+                                _controller.NoOfHours_Validator(text);
+                            if (message == "") {
+                              validate_ = true;
+                            } else {
+                              validate_ = false;
+                            }
+
+                            setState(() {
+                              validate = validate_;
+                            });
+                          },
+                          decoration: InputDecoration(
+                              suffixIcon: validate == true
+                                  ? Icon(Icons.error,
+                                      color: Colors.amber, size: 0)
+                                  : Icon(Icons.error, color: Colors.amber),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.red, //this has no effect
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              hintText: "enter No Of hours"),
+                        ),
+                      ),
+                    ],
+                  )),
+              Padding(
+                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 7.0),
                   child: new Row(
                     mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
@@ -163,13 +319,19 @@ class _SlotReservationState extends State<SlotReservation> {
                                   ? Icon(Icons.error,
                                       color: Colors.amber, size: 0)
                                   : Icon(Icons.error, color: Colors.amber),
-                              hintText: "Enter Vehicle type eg.car etc"),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.red, //this has no effect
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              hintText: "enter vehicle type"),
                         ),
                       ),
                     ],
                   )),
               Padding(
-                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 2.0),
+                  padding: EdgeInsets.only(left: 25.0, right: 25.0, top: 7.0),
                   child: new Row(
                     mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
@@ -193,7 +355,13 @@ class _SlotReservationState extends State<SlotReservation> {
                                   ? Icon(Icons.error,
                                       color: Colors.amber, size: 0)
                                   : Icon(Icons.error, color: Colors.amber),
-                              hintText: "Enter Car No eg. 2343"),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.red, //this has no effect
+                                ),
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              hintText: "enter vehicle no"),
                         ),
                       ),
                     ],
@@ -210,7 +378,7 @@ class _SlotReservationState extends State<SlotReservation> {
                       color: Colors.white,
                     ),
                   ),
-                  color: Hexcolor('#e9c749'),
+                  color: Colors.deepOrange,
                   onPressed: () async {
                     await SlotReservation_Request(this._controller.Model)
                         .then((success) {
@@ -224,8 +392,7 @@ class _SlotReservationState extends State<SlotReservation> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (_) =>
-                                            SlotListScreen(park_id)),
+                                        builder: (_) => PaymentScreen()),
                                   );
                                 },
                                 child: Text('OK'),
