@@ -26,6 +26,11 @@
 ![p23](https://user-images.githubusercontent.com/57071901/83603773-724fe880-a58e-11ea-8863-6ff2115dc33c.PNG)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![p24](https://user-images.githubusercontent.com/57071901/83603788-7845c980-a58e-11ea-9dfe-db1506bc260c.PNG);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![p25](https://user-images.githubusercontent.com/57071901/83603806-7ed44100-a58e-11ea-9a0f-cc4d8fe349d5.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![transection](https://user-images.githubusercontent.com/57071901/85949815-57e11300-b972-11ea-9b0c-8add91bfadb3.PNG)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![cards](https://user-images.githubusercontent.com/57071901/85949819-5dd6f400-b972-11ea-882c-a5c3a3aedf44.PNG)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![payment](https://user-images.githubusercontent.com/57071901/85949826-65969880-b972-11ea-82fe-10f48bf16b38.PNG)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![excard](https://user-images.githubusercontent.com/57071901/85949833-6deed380-b972-11ea-8ca8-3fc4f8effa7b.PNG)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![success](https://user-images.githubusercontent.com/57071901/85949837-734c1e00-b972-11ea-97c5-80685a86d201.PNG)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 ## Stripe Payment Image
