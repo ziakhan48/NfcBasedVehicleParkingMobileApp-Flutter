@@ -1,0 +1,205 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.parkit_com"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Shahzad\parkit_com\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\Shahzad\parkit_com\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+15-->[:geolocator] C:\Users\Shahzad\parkit_com\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+15-->[:geolocator] C:\Users\Shahzad\parkit_com\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+21    <!--
+22 io.flutter.app.FlutterApplication is an android.app.Application that
+23         calls FlutterMain.startInitialization(this); in its onCreate method.
+24         In most cases you can leave this as-is, but you if you want to provide
+25         additional functionality it is fine to subclass or reimplement
+26         FlutterApplication and put your custom class here.
+27    -->
+28    <application
+28-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:8:5-33:19
+29        android:name="io.flutter.app.FlutterApplication"
+29-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:9:9-57
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.1.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:11:9-43
+33        android:label="parkit_com"
+33-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:10:9-35
+34        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+34-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:11:18-74
+35
+36        <!-- Add the following entry, with your API key -->
+37        <meta-data
+37-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:14:9-15:73
+38            android:name="com.google.android.geo.API_KEY"
+38-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:14:20-65
+39            android:value="AIzaSyAuoOeYDXkpylbep3Fx4tx-jHvhRe7t5uE" />
+39-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:15:16-71
+40
+41        <activity
+41-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:16:9-27:20
+42            android:name="com.example.parkit_com.MainActivity"
+42-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:17:13-41
+43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+43-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:20:13-163
+44            android:hardwareAccelerated="true"
+44-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:21:13-47
+45            android:launchMode="singleTop"
+45-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:18:13-43
+46            android:theme="@style/LaunchTheme"
+46-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:19:13-47
+47            android:windowSoftInputMode="adjustResize" >
+47-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:22:13-55
+48            <intent-filter>
+48-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:23:13-26:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:24:17-68
+49-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:24:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:25:17-76
+51-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:25:27-74
+52            </intent-filter>
+53        </activity>
+54        <!--
+55             Don't delete the meta-data below.
+56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+57        -->
+58        <meta-data
+58-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:30:9-32:33
+59            android:name="flutterEmbedding"
+59-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:31:13-44
+60            android:value="2" />
+60-->C:\Users\Shahzad\parkit_com\android\app\src\main\AndroidManifest.xml:32:13-30
+61        <meta-data
+61-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:36
+62            android:name="com.google.android.gms.wallet.api.enabled"
+62-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-69
+63            android:value="true" />
+63-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-33
+64
+65        <activity
+65-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:75
+66            android:name="com.gettipsi.stripe.OpenBrowserActivity"
+66-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-67
+67            android:exported="false"
+67-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+68            android:launchMode="singleTask"
+68-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-44
+69            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+69-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-72
+70        <activity
+70-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-34:20
+71            android:name="com.gettipsi.stripe.RedirectUriReceiver"
+71-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-67
+72            android:exported="true"
+72-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-36
+73            android:launchMode="singleTask"
+73-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-44
+74            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+74-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-83
+75            <intent-filter>
+75-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-33:29
+76                <action android:name="android.intent.action.VIEW" />
+76-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:27:17-69
+76-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:27:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-76
+78-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:29:27-73
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:30:17-78
+79-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:30:27-75
+80
+81                <data android:scheme="example" />
+81-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:32:17-50
+81-->[:stripe_payment] C:\Users\Shahzad\parkit_com\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:32:23-47
+82            </intent-filter>
+83        </activity>
+84        <activity
+84-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:12:9-14:57
+85            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+85-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:13:13-76
+86            android:theme="@style/StripeDefaultTheme" />
+86-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:14:13-54
+87        <activity
+87-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:15:9-17:57
+88            android:name="com.stripe.android.view.PaymentMethodsActivity"
+88-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:16:13-74
+89            android:theme="@style/StripeDefaultTheme" />
+89-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:17:13-54
+90        <activity
+90-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:18:9-20:57
+91            android:name="com.stripe.android.view.PaymentFlowActivity"
+91-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:19:13-71
+92            android:theme="@style/StripeDefaultTheme" />
+92-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:20:13-54
+93        <activity
+93-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:21:9-23:57
+94            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+94-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:22:13-78
+95            android:theme="@style/StripeDefaultTheme" />
+95-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:23:13-54
+96        <activity
+96-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:24:9-26:57
+97            android:name="com.stripe.android.view.PaymentRelayActivity"
+97-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:25:13-72
+98            android:theme="@style/StripeDefaultTheme" />
+98-->[com.stripe:stripe-android:10.4.6] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\59e81aec98451931b50bcaae188dae23\jetified-stripe-android-10.4.6\AndroidManifest.xml:26:13-54
+99        <activity
+99-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\4dc56ecb4b1d2f0cfaeda9a7e622a47f\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:12:9-14:54
+100            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+100-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\4dc56ecb4b1d2f0cfaeda9a7e622a47f\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:13:13-81
+101            android:theme="@style/Stripe3DS2Theme" />
+101-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\4dc56ecb4b1d2f0cfaeda9a7e622a47f\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:14:13-51
+102        <activity
+102-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\4dc56ecb4b1d2f0cfaeda9a7e622a47f\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:15:9-17:54
+103            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity"
+103-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\4dc56ecb4b1d2f0cfaeda9a7e622a47f\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:16:13-95
+104            android:theme="@style/Stripe3DS2Theme" /> <!-- Needs to be explicitly declared on P+ -->
+104-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\4dc56ecb4b1d2f0cfaeda9a7e622a47f\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:17:13-51
+105        <uses-library
+105-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+106            android:name="org.apache.http.legacy"
+106-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+107            android:required="false" />
+107-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+108
+109        <activity
+109-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+110            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+110-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+112-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\b168543d7515da85706336080d92d593\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\b168543d7515da85706336080d92d593\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Shahzad\.gradle\caches\transforms-2\files-2.1\b168543d7515da85706336080d92d593\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+117    </application>
+118
+119</manifest>
