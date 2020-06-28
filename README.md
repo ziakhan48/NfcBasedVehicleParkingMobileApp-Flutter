@@ -27,6 +27,11 @@
 ![p24](https://user-images.githubusercontent.com/57071901/83603788-7845c980-a58e-11ea-9dfe-db1506bc260c.PNG);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![p25](https://user-images.githubusercontent.com/57071901/83603806-7ed44100-a58e-11ea-9a0f-cc4d8fe349d5.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+
+## Stripe Payment Image
+
+![Stripe Payment history](https://user-images.githubusercontent.com/57071901/85949515-b1484280-b970-11ea-8ab4-bbc85f0232ff.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
